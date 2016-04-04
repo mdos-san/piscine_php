@@ -1,0 +1,742 @@
+<!-- *********************************************************************** -->
+<!--                                                                         -->
+<!--                                                      :::      ::::::::  -->
+<!-- mendeleiev.html                                    :+:      :+:    :+:  -->
+<!--                                                  +:+ +:+         +:+    -->
+<!-- By: mdos-san <mdos-san@student.42.fr>          +#+  +:+       +#+       -->
+<!--                                              +#+#+#+#+#+   +#+          -->
+<!-- Created: 2016/04/04 14:48:48 by mdos-san          #+#    #+#            -->
+<!-- Updated: 2016/04/04 16:05:31 by mdos-san         ###   ########.fr      -->
+<!--                                                                         -->
+<!-- *********************************************************************** -->
+
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<title>Mendeleiev</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			html {
+				width: 99%;
+				height: 99%;
+				margin: 1%;
+			}
+			body {
+				width: 100%;
+				height: 100%;
+				background-image: url("http://img0.mxstatic.com/wallpapers/dd62c825ac162b905717ff145e6e47c3_large.jpeg");
+			}
+			.line {
+				display: block;
+				width: 100%;
+				height: 10%;
+			}
+			.col {
+				display: inline-block;
+				position: relative;
+				vertical-align: top;
+				background: white;
+				margin-left: -4px;
+				width: 5%;
+				height: 100%;
+				border: 1px solid Black;
+			}
+			.empty {
+				display: inline-block;
+				position: relative;
+				vertical-align: top;
+				background: none;
+				margin-left: -4px;
+				width: 5%;
+				height: 100%;
+				border: 1px solid rgba(255, 255, 255, 0);
+			}
+			.wei {
+				display: block;
+				position: absolute;
+				left: 100%;
+				transform: translateX(-100%);
+				text-align: right;
+				font-size: 1.5vmin;
+			}
+			.sym {
+				display: block;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				text-align: center;
+				font-size: 1.3vmin;
+			}
+			.nb {
+				display: block;
+				position: absolute;
+				top: 100%;
+				transform: translateY(-100%);
+				text-align: left;
+				font-size: 1.5vmin;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="line">
+			<div class="col" style="background-color: rgba(204, 153, 255, 1);">
+				<div class="wei"><p>1,00</p></div>
+				<div class="sym"><h1>H</h1></div>
+				<div class="nb"><p  style="padding: auto">1</p></div>
+			</div>
+			<div class="empty"></div>
+			<div class="empty"></div>
+			<div class="empty"></div>
+			<div class="empty"></div>
+			<div class="empty"></div>
+			<div class="empty"></div>
+			<div class="empty"></div>
+			<div class="empty"></div>
+			<div class="empty"></div>
+			<div class="empty"></div>
+			<div class="empty"></div>
+			<div class="empty"></div>
+			<div class="empty"></div>
+			<div class="empty"></div>
+			<div class="empty"></div>
+			<div class="empty"></div>
+			<div class="col" style="background-color: #00FFFF">
+				<div class="wei"><p>4.00</p></div>
+				<div class="sym"><h1>He</h1></div>
+				<div class="nb"><p>2</p></div>
+			</div>
+		</div>
+		<div class="line">
+			<div class="col" style="background-color: rgba(255, 153, 153, 1);">
+				<div class="wei"><p>6.94</p></div>
+				<div class="sym"><h1>Li</h1></div>
+				<div class="nb"><p>3</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(255, 204, 51, 1);">
+				<div class="wei"><p>9.01</p></div>
+				<div class="sym"><h1>Be</h1></div>
+				<div class="nb"><p>4</p></div>
+			</div>
+			<div class="empty"></div>
+			<div class="empty"></div>
+			<div class="empty"></div>
+			<div class="empty"></div>
+			<div class="empty"></div>
+			<div class="empty"></div>
+			<div class="empty"></div>
+			<div class="empty"></div>
+			<div class="empty"></div>
+			<div class="empty"></div>
+			<div class="col" style="background-color: rgba(51, 255, 0, 1);">
+				<div class="wei"><p>10.81</p></div>
+				<div class="sym"><h1>B</h1></div>
+				<div class="nb"><p>5</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(204, 153, 255, 1);">
+				<div class="wei"><p>12.01</p></div>
+				<div class="sym"><h1>C</h1></div>
+				<div class="nb"><p>6</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(204, 153, 255, 1);">
+				<div class="wei"><p>14.00</p></div>
+				<div class="sym"><h1>N</h1></div>
+				<div class="nb"><p>7</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(204, 153, 255, 1);">
+				<div class="wei"><p>15.99</p></div>
+				<div class="sym"><h1>O</h1></div>
+				<div class="nb"><p>8</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(255, 0, 153, 1);">
+				<div class="wei"><p>18.99</p></div>
+				<div class="sym"><h1>F</h1></div>
+				<div class="nb"><p>9</p></div>
+			</div>
+			<div class="col" style="background-color: #00FFFF">
+				<div class="wei"><p>20.17</p></div>
+				<div class="sym"><h1>Ne</h1></div>
+				<div class="nb"><p>10</p></div>
+			</div>
+		</div>
+		<div class="line">
+			<div class="col" style="background-color: rgba(255, 153, 153, 1);">
+				<div class="wei"><p>22.98</p></div>
+				<div class="sym"><h1>Na</h1></div>
+				<div class="nb"><p>11</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(255, 204, 51, 1);">
+				<div class="wei"><p>24.30</p></div>
+				<div class="sym"><h1>Mg</h1></div>
+				<div class="nb"><p>12</p></div>
+			</div>
+			<div class="empty"></div>
+			<div class="empty"></div>
+			<div class="empty"></div>
+			<div class="empty"></div>
+			<div class="empty"></div>
+			<div class="empty"></div>
+			<div class="empty"></div>
+			<div class="empty"></div>
+			<div class="empty"></div>
+			<div class="empty"></div>
+			<div class="col" style="background-color: rgba(255, 255, 0, 1);">
+				<div class="wei"><p>26.98</p></div>
+				<div class="sym"><h1>Al</h1></div>
+				<div class="nb"><p>13</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(51, 255, 0, 1);">
+				<div class="wei"><p>28.08</p></div>
+				<div class="sym"><h1>Si</h1></div>
+				<div class="nb"><p>6</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(204, 153, 255, 1);">
+				<div class="wei"><p>30.97</p></div>
+				<div class="sym"><h1>P</h1></div>
+				<div class="nb"><p>15</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(204, 153, 255, 1);">
+				<div class="wei"><p>32.06</p></div>
+				<div class="sym"><h1>S</h1></div>
+				<div class="nb"><p>16</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(255, 0, 153, 1);">
+				<div class="wei"><p>35.45</p></div>
+				<div class="sym"><h1>Cl</h1></div>
+				<div class="nb"><p>16</p></div>
+			</div>
+			<div class="col" style="background-color: #00FFFF">
+				<div class="wei"><p>39.94</p></div>
+				<div class="sym"><h1>Ar</h1></div>
+				<div class="nb"><p>18</p></div>
+			</div>
+		</div>
+		<div class="line">
+			<div class="col" style="background-color: rgba(255, 153, 153, 1);">
+				<div class="wei"><p>39.09</p></div>
+				<div class="sym"><h1>K</h1></div>
+				<div class="nb"><p>19</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(255, 204, 51, 1);">
+				<div class="wei"><p>40.07</p></div>
+				<div class="sym"><h1>Ca</h1></div>
+				<div class="nb"><p>20</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(255, 255, 153, 1);">
+				<div class="wei"><p>44.95</p></div>
+				<div class="sym"><h1>Sc</h1></div>
+				<div class="nb"><p>21</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(255, 255, 153, 1);">
+				<div class="wei"><p>47.86</p></div>
+				<div class="sym"><h1>Ti</h1></div>
+				<div class="nb"><p>22</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(255, 255, 153, 1);">
+				<div class="wei"><p>50.94</p></div>
+				<div class="sym"><h1>V</h1></div>
+				<div class="nb"><p>23</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(255, 255, 153, 1);">
+				<div class="wei"><p>51.99</p></div>
+				<div class="sym"><h1>Cr</h1></div>
+				<div class="nb"><p>24</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(255, 255, 153, 1);">
+				<div class="wei"><p>54.93</p></div>
+				<div class="sym"><h1>Mn</h1></div>
+				<div class="nb"><p>25</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(255, 255, 153, 1);">
+				<div class="wei"><p>55.84</p></div>
+				<div class="sym"><h1>Fe</h1></div>
+				<div class="nb"><p>26</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(255, 255, 153, 1);">
+				<div class="wei"><p>58.93</p></div>
+				<div class="sym"><h1>Co</h1></div>
+				<div class="nb"><p>27</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(255, 255, 153, 1);">
+				<div class="wei"><p>58.69</p></div>
+				<div class="sym"><h1>Ni</h1></div>
+				<div class="nb"><p>28</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(255, 255, 153, 1);">
+				<div class="wei"><p>63.54</p></div>
+				<div class="sym"><h1>Cu</h1></div>
+				<div class="nb"><p>29</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(255, 255, 153, 1);">
+				<div class="wei"><p>65.38</p></div>
+				<div class="sym"><h1>Zn</h1></div>
+				<div class="nb"><p>30</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(255, 255, 0, 1);">
+				<div class="wei"><p>69.72</p></div>
+				<div class="sym"><h1>Ga</h1></div>
+				<div class="nb"><p>31</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(51, 255, 0, 1);">
+				<div class="wei"><p>72.64</p></div>
+				<div class="sym"><h1>Ge</h1></div>
+				<div class="nb"><p>32</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(51, 255, 0, 1);">
+				<div class="wei"><p>74.92</p></div>
+				<div class="sym"><h1>As</h1></div>
+				<div class="nb"><p>33</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(204, 153, 255, 1);">
+				<div class="wei"><p>78.96</p></div>
+				<div class="sym"><h1>Se</h1></div>
+				<div class="nb"><p>34</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(255, 0, 153, 1);">
+				<div class="wei"><p>79.90</p></div>
+				<div class="sym"><h1>Br</h1></div>
+				<div class="nb"><p>35</p></div>
+			</div>
+			<div class="col" style="background-color: #00FFFF">
+				<div class="wei"><p>83.79</p></div>
+				<div class="sym"><h1>Kr</h1></div>
+				<div class="nb"><p>36</p></div>
+			</div>
+		</div>
+		<div class="line">
+			<div class="col" style="background-color: rgba(255, 153, 153, 1);">
+				<div class="wei"><p>85.46</p></div>
+				<div class="sym"><h1>Rb</h1></div>
+				<div class="nb"><p>37</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(255, 204, 51, 1);">
+				<div class="wei"><p>87.62</p></div>
+				<div class="sym"><h1>Sr</h1></div>
+				<div class="nb"><p>38</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(255, 255, 153, 1);">
+				<div class="wei"><p>88.90</p></div>
+				<div class="sym"><h1>Y</h1></div>
+				<div class="nb"><p>39</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(255, 255, 153, 1);">
+				<div class="wei"><p>91.22</p></div>
+				<div class="sym"><h1>Zr</h1></div>
+				<div class="nb"><p>40</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(255, 255, 153, 1);">
+				<div class="wei"><p>92.90</p></div>
+				<div class="sym"><h1>Nb</h1></div>
+				<div class="nb"><p>41</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(255, 255, 153, 1);">
+				<div class="wei"><p>95.96</p></div>
+				<div class="sym"><h1>Mo</h1></div>
+				<div class="nb"><p>42</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(255, 255, 153, 1);">
+				<div class="wei"><p>98</p></div>
+				<div class="sym"><h1>Tc</h1></div>
+				<div class="nb"><p>43</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(255, 255, 153, 1);">
+				<div class="wei"><p>101.07</p></div>
+				<div class="sym"><h1>Ru</h1></div>
+				<div class="nb"><p>44</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(255, 255, 153, 1);">
+				<div class="wei"><p>102.90</p></div>
+				<div class="sym"><h1>Rh</h1></div>
+				<div class="nb"><p>45</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(255, 255, 153, 1);">
+				<div class="wei"><p>106.42</p></div>
+				<div class="sym"><h1>Pd</h1></div>
+				<div class="nb"><p>46</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(255, 255, 153, 1);">
+				<div class="wei"><p>107.86</p></div>
+				<div class="sym"><h1>Ag</h1></div>
+				<div class="nb"><p>47</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(255, 255, 153, 1);">
+				<div class="wei"><p>112.44</p></div>
+				<div class="sym"><h1>Cd</h1></div>
+				<div class="nb"><p>48</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(255, 255, 0, 1);">
+				<div class="wei"><p>114.81</p></div>
+				<div class="sym"><h1>In</h1></div>
+				<div class="nb"><p>49</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(255, 255, 0, 1);">
+				<div class="wei"><p>118.71</p></div>
+				<div class="sym"><h1>Sn</h1></div>
+				<div class="nb"><p>50</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(51, 255, 0, 1);">
+				<div class="wei"><p>121.76</p></div>
+				<div class="sym"><h1>Sb</h1></div>
+				<div class="nb"><p>51</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(51, 255, 0, 1);">
+				<div class="wei"><p>127.60</p></div>
+				<div class="sym"><h1>Te</h1></div>
+				<div class="nb"><p>52</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(255, 0, 153, 1);">
+				<div class="wei"><p>126.90</p></div>
+				<div class="sym"><h1>I</h1></div>
+				<div class="nb"><p>53</p></div>
+			</div>
+			<div class="col" style="background-color: #00FFFF">
+				<div class="wei"><p>131.89</p></div>
+				<div class="sym"><h1>Xe</h1></div>
+				<div class="nb"><p>54</p></div>
+			</div>
+		</div>
+		<div class="line">
+			<div class="col" style="background-color: rgba(255, 153, 153, 1);">
+				<div class="wei"><p>132.90</p></div>
+				<div class="sym"><h1>Cs</h1></div>
+				<div class="nb"><p>55</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(255, 204, 51, 1);">
+				<div class="wei"><p>137.32</p></div>
+				<div class="sym"><h1>Ba</h1></div>
+				<div class="nb"><p>56</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(255, 255, 153, 1);">
+				<div class="wei"><p>174.86</p></div>
+				<div class="sym"><h1>Lu</h1></div>
+				<div class="nb"><p>71</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(255, 255, 153, 1);">
+				<div class="wei"><p>178.49</p></div>
+				<div class="sym"><h1>Hf</h1></div>
+				<div class="nb"><p>72</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(255, 255, 153, 1);">
+				<div class="wei"><p>180.94</p></div>
+				<div class="sym"><h1>Ta</h1></div>
+				<div class="nb"><p>73</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(255, 255, 153, 1);">
+				<div class="wei"><p>183.84</p></div>
+				<div class="sym"><h1>W</h1></div>
+				<div class="nb"><p>74</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(255, 255, 153, 1);">
+				<div class="wei"><p>186.20</p></div>
+				<div class="sym"><h1>Re</h1></div>
+				<div class="nb"><p>75</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(255, 255, 153, 1);">
+				<div class="wei"><p>190.23</p></div>
+				<div class="sym"><h1>Os</h1></div>
+				<div class="nb"><p>76</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(255, 255, 153, 1);">
+				<div class="wei"><p>192.21</p></div>
+				<div class="sym"><h1>Ir</h1></div>
+				<div class="nb"><p>77</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(255, 255, 153, 1);">
+				<div class="wei"><p>195.08</p></div>
+				<div class="sym"><h1>Pt</h1></div>
+				<div class="nb"><p>78</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(255, 255, 153, 1);">
+				<div class="wei"><p>196.96</p></div>
+				<div class="sym"><h1>Au</h1></div>
+				<div class="nb"><p>79</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(255, 255, 153, 1);">
+				<div class="wei"><p>200.59</p></div>
+				<div class="sym"><h1>Hg</h1></div>
+				<div class="nb"><p>80</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(255, 255, 0, 1);">
+				<div class="wei"><p>204.38</p></div>
+				<div class="sym"><h1>Tl</h1></div>
+				<div class="nb"><p>81</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(255, 255, 0, 1);">
+				<div class="wei"><p>207.2</p></div>
+				<div class="sym"><h1>Pb</h1></div>
+				<div class="nb"><p>82</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(255, 255, 0, 1);">
+				<div class="wei"><p>208.98</p></div>
+				<div class="sym"><h1>Bi</h1></div>
+				<div class="nb"><p>83</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(51, 255, 0, 1);">
+				<div class="wei"><p>210</p></div>
+				<div class="sym"><h1>Po</h1></div>
+				<div class="nb"><p>84</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(255, 0, 153, 1);">
+				<div class="wei"><p>210</p></div>
+				<div class="sym"><h1>At</h1></div>
+				<div class="nb"><p>85</p></div>
+			</div>
+			<div class="col" style="background-color: #00FFFF">
+				<div class="wei"><p>220</p></div>
+				<div class="sym"><h1>Rn</h1></div>
+				<div class="nb"><p>86</p></div>
+			</div>
+		</div>
+		<div class="line">
+			<div class="col" style="background-color: rgba(255, 153, 153, 1);">
+				<div class="wei"><p>223</p></div>
+				<div class="sym"><h1>Fe</h1></div>
+				<div class="nb"><p>87</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(255, 204, 51, 1);">
+				<div class="wei"><p>226</p></div>
+				<div class="sym"><h1>Ra</h1></div>
+				<div class="nb"><p>88</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(255, 255, 153, 1);">
+				<div class="wei"><p>262</p></div>
+				<div class="sym"><h1>Lr</h1></div>
+				<div class="nb"><p>103</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(255, 255, 153, 1);">
+				<div class="wei"><p>261</p></div>
+				<div class="sym"><h1>Rf</h1></div>
+				<div class="nb"><p>104</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(255, 255, 153, 1);">
+				<div class="wei"><p>262</p></div>
+				<div class="sym"><h1>Db</h1></div>
+				<div class="nb"><p>105</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(255, 255, 153, 1);">
+				<div class="wei"><p>266</p></div>
+				<div class="sym"><h1>Sg</h1></div>
+				<div class="nb"><p>106</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(255, 255, 153, 1);">
+				<div class="wei"><p>264</p></div>
+				<div class="sym"><h1>Bh</h1></div>
+				<div class="nb"><p>107</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(255, 255, 153, 1);">
+				<div class="wei"><p>277</p></div>
+				<div class="sym"><h1>Hs</h1></div>
+				<div class="nb"><p>108</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(255, 255, 153, 1);">
+				<div class="wei"><p>268</p></div>
+				<div class="sym"><h1>Mt</h1></div>
+				<div class="nb"><p>109</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(255, 255, 153, 1);">
+				<div class="wei"><p>271</p></div>
+				<div class="sym"><h1>Ds</h1></div>
+				<div class="nb"><p>110</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(255, 255, 153, 1);">
+				<div class="wei"><p>272</p></div>
+				<div class="sym"><h1>Rg</h1></div>
+				<div class="nb"><p>111</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(255, 255, 153, 1);">
+				<div class="wei"><p>285</p></div>
+				<div class="sym"><h1>Cn</h1></div>
+				<div class="nb"><p>112</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(100, 100, 100, 1);">
+				<div class="wei"><p>284</p></div>
+				<div class="sym"><h1>Uut</h1></div>
+				<div class="nb"><p>113</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(100, 100, 100, 1);">
+				<div class="wei"><p>289</p></div>
+				<div class="sym"><h1>Fl</h1></div>
+				<div class="nb"><p>114</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(100, 100, 100, 1);">
+				<div class="wei"><p>288</p></div>
+				<div class="sym"><h1>Uup</h1></div>
+				<div class="nb"><p>115</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(100, 100, 100, 1);">
+				<div class="wei"><p>292</p></div>
+				<div class="sym"><h1>Lv</h1></div>
+				<div class="nb"><p>116</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(100, 100, 100, 1);">
+				<div class="wei"><p></p></div>
+				<div class="sym"><h1>Uus</h1></div>
+				<div class="nb"><p>117</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(100, 100, 100, 1);">
+				<div class="wei"><p>294</p></div>
+				<div class="sym"><h1>Uuo</h1></div>
+				<div class="nb"><p>118</p></div>
+			</div>
+		</div>
+		<div class="line" style="margin-top: 1%;">
+			<div class="empty"></div>
+			<div class="empty"></div>
+			<div class="col" style="background-color: rgba(51, 255, 102, 1);">
+				<div class="wei"><p>138.90</p></div>
+				<div class="sym"><h1>La</h1></div>
+				<div class="nb"><p>57</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(51, 255, 102, 1);">
+				<div class="wei"><p>140.11</p></div>
+				<div class="sym"><h1>Ce</h1></div>
+				<div class="nb"><p>58</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(51, 255, 102, 1);">
+				<div class="wei"><p>140.90</p></div>
+				<div class="sym"><h1>DPr</h1></div>
+				<div class="nb"><p>59</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(51, 255, 102, 1);">
+				<div class="wei"><p>144.24</p></div>
+				<div class="sym"><h1>Nd</h1></div>
+				<div class="nb"><p>60</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(51, 255, 102, 1);">
+				<div class="wei"><p>145</p></div>
+				<div class="sym"><h1>Pm</h1></div>
+				<div class="nb"><p>61</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(51, 255, 102, 1);">
+				<div class="wei"><p>150.36</p></div>
+				<div class="sym"><h1>Sm</h1></div>
+				<div class="nb"><p>62</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(51, 255, 102, 1);">
+				<div class="wei"><p>151.96</p></div>
+				<div class="sym"><h1>Eu</h1></div>
+				<div class="nb"><p>63</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(51, 255, 102, 1);">
+				<div class="wei"><p>157.25</p></div>
+				<div class="sym"><h1>Gd</h1></div>
+				<div class="nb"><p>64</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(51, 255, 102, 1);">
+				<div class="wei"><p>158.92</p></div>
+				<div class="sym"><h1>Tb</h1></div>
+				<div class="nb"><p>65</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(51, 255, 102, 1);">
+				<div class="wei"><p>162.50</p></div>
+				<div class="sym"><h1>Dy</h1></div>
+				<div class="nb"><p>66</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(51, 255, 102, 1);">
+				<div class="wei"><p>164.93</p></div>
+				<div class="sym"><h1>Ho</h1></div>
+				<div class="nb"><p>67</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(51, 255, 102, 1);">
+				<div class="wei"><p>167.25</p></div>
+				<div class="sym"><h1>Er</h1></div>
+				<div class="nb"><p>68</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(51, 255, 102, 1);">
+				<div class="wei"><p>168.93</p></div>
+				<div class="sym"><h1>Tm</h1></div>
+				<div class="nb"><p>69</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(51, 255, 102, 1);">
+				<div class="wei"><p>173.05</p></div>
+				<div class="sym"><h1>Yb</h1></div>
+				<div class="nb"><p>70</p></div>
+			</div>
+			<div class="empty"></div>
+			<div class="empty"></div>
+			</div>
+		</div>
+		<div class="line">
+			<div class="empty"></div>
+			<div class="empty"></div>
+			<div class="col" style="background-color: rgba(51, 204, 0, 1);">
+				<div class="wei"><p>227</p></div>
+				<div class="sym"><h1>Ac</h1></div>
+				<div class="nb"><p>89</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(51, 204, 0, 1);">
+				<div class="wei"><p>232.03</p></div>
+				<div class="sym"><h1>Th</h1></div>
+				<div class="nb"><p>90</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(51, 204, 0, 1);">
+				<div class="wei"><p>231.03</p></div>
+				<div class="sym"><h1>Pa</h1></div>
+				<div class="nb"><p>91</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(51, 204, 0, 1);">
+				<div class="wei"><p>238.02</p></div>
+				<div class="sym"><h1>U</h1></div>
+				<div class="nb"><p>92</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(51, 204, 0, 1);">
+				<div class="wei"><p>237</p></div>
+				<div class="sym"><h1>Np</h1></div>
+				<div class="nb"><p>93</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(51, 204, 0, 1);">
+				<div class="wei"><p>244</p></div>
+				<div class="sym"><h1>Pu</h1></div>
+				<div class="nb"><p>94</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(51, 204, 0, 1);">
+				<div class="wei"><p>243</p></div>
+				<div class="sym"><h1>Am</h1></div>
+				<div class="nb"><p>95</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(51, 204, 0, 1);">
+				<div class="wei"><p>247</p></div>
+				<div class="sym"><h1>Cm</h1></div>
+				<div class="nb"><p>96</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(51, 204, 0, 1);">
+				<div class="wei"><p>247</p></div>
+				<div class="sym"><h1>Bk</h1></div>
+				<div class="nb"><p>97</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(51, 204, 0, 1);">
+				<div class="wei"><p>251</p></div>
+				<div class="sym"><h1>Cf</h1></div>
+				<div class="nb"><p>98</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(51, 204, 0, 1);">
+				<div class="wei"><p>252</p></div>
+				<div class="sym"><h1>Es</h1></div>
+				<div class="nb"><p>99</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(51, 204, 0, 1);">
+				<div class="wei"><p>257</p></div>
+				<div class="sym"><h1>Fm</h1></div>
+				<div class="nb"><p>100</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(51, 204, 0, 1);">
+				<div class="wei"><p>258</p></div>
+				<div class="sym"><h1>Md</h1></div>
+				<div class="nb"><p>101</p></div>
+			</div>
+			<div class="col" style="background-color: rgba(51, 204, 0, 1);">
+				<div class="wei"><p>259</p></div>
+				<div class="sym"><h1>No</h1></div>
+				<div class="nb"><p>102</p></div>
+			</div>
+			<div class="empty"></div>
+			<div class="empty"></div>
+			</div>
+		</div>
+	</body>
+</html>
