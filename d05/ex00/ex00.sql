@@ -1,1 +1,1 @@
-CREATE DATABASE `db_mdos-san`;
+CREATE DATABASE IF NOT EXISTS `db_mdos-san`;
