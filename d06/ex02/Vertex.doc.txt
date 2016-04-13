@@ -1,3 +1,31 @@
 <- Vertex ----------------------------------------------------------------------
-Your documentation here.
+The Vertex.class contains the attributes you'll need to set your Rasterizer running.
+
+An instance should be constructed with at least x, y, z values set as :
+new Vertex( array( 'x' => 1.0, 'y' => 0.0, 'z' => 0.0 );
+
+w and color values are optional and should be respectively defined as :
+new Vertex( array( 'x' => 9.0, 'y' => 9.0, 'z' => 9.0, 'w' => 3.0 ) );
+
+$blue  = new Color( array( 'red' =>   0, 'green' =>   0, 'blue' => 255 ) );
+new Vertex( array( 'x' => 1.0, 'y' => 0.0, 'z' => 0.0, 'color' => $blue ) );
+
+Default values for w and color are 1.0 and white.
+Any other behavior is undefined. The Class provides getters and setters as :
+
+getX();
+getY();
+getZ();
+getW();
+getColor();
+
+setX($val);
+setY($val);
+setZ($val);
+setW($val);
+setColor(Color $val);
+
+that will allow you to access and modify the Vertex class attributes.
+Please note that setColor needs an argument containing a Color class like :
+$val  = new Color( array( 'red' =>   0, 'green' =>   0, 'blue' => 255 ) );
 ---------------------------------------------------------------------- Vertex ->
