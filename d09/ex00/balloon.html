@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+	<head>
+		<style>
+			#balloon {
+				width: 200px;
+				height: 200px;
+				background-color: red;
+				border-radius: 50%;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="balloon" onclick="rotate()" onmouseleave="rotate_rev()"></div>
+		<script>
+			function	rotate(){
+					var v = document.getElementById('balloon');
+					var color = window.getComputedStyle(v, null).getPropertyValue("background-color");
+					var size = window.getComputedStyle(v, null).getPropertyValue("width");
+					size = parseInt(size) + 10;
+					if (size > 420)
+						size = 200;
+					if (color == 'rgb(255, 0, 0)')
+						document.getElementById('balloon').style.backgroundColor = "green";
+					else if (color == 'rgb(0, 128, 0)')
+						document.getElementById('balloon').style.backgroundColor = "blue";
+					else if (color == 'rgb(0, 0, 255)')
+						document.getElementById('balloon').style.backgroundColor = "red";
+					document.getElementById('balloon').style.width = size + "px";
+					document.getElementById('balloon').style.height = size + "px";
+				}
+			function	rotate_rev(){
+					var v = document.getElementById('balloon');
+					var color = window.getComputedStyle(v, null).getPropertyValue("background-color");
+					var size = window.getComputedStyle(v, null).getPropertyValue("width");
+					size = parseInt(size) - 5;
+					if (size < 200)
+						size = 200;
+					if (color == 'rgb(255, 0, 0)')
+						document.getElementById('balloon').style.backgroundColor = "blue";
+					else if (color == 'rgb(0, 128, 0)')
+						document.getElementById('balloon').style.backgroundColor = "red";
+					else if (color == 'rgb(0, 0, 255)')
+						document.getElementById('balloon').style.backgroundColor = "green";
+					document.getElementById('balloon').style.width = size + "px";
+					document.getElementById('balloon').style.height = size + "px";
+				}
+		</script>
+	</body>
+</html>
