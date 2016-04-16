@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+	<head>
+			<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<style>
+			#balloon {
+				width: 200px;
+				height: 200px;
+				background-color: red;
+				border-radius: 50%;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="balloon" onclick="rotate()" onmouseleave="rotate_rev()"></div>
+		<script>
+			function	rotate(){
+					if ($('#balloon').css("background-color") == "rgb(255, 0, 0)")
+						$('#balloon').css("background-color", "green");
+					else if ($('#balloon').css("background-color") == "rgb(0, 128, 0)")
+						$('#balloon').css("background-color", "blue");
+					else if ($('#balloon').css("background-color") == "rgb(0, 0, 255)")
+						$('#balloon').css("background-color", "red");
+					$('#balloon').css("width", "+=10");
+					$('#balloon').css("height", "+=10");
+					if ($('#balloon').css("width") == "420px")
+					{
+						$('#balloon').css("width", "200");
+						$('#balloon').css("height", "200");
+					}
+				}
+			function	rotate_rev(){
+					if ($('#balloon').css("background-color") == "rgb(255, 0, 0)")
+						$('#balloon').css("background-color", "blue");
+					else if ($('#balloon').css("background-color") == "rgb(0, 128, 0)")
+						$('#balloon').css("background-color", "red");
+					else if ($('#balloon').css("background-color") == "rgb(0, 0, 255)")
+						$('#balloon').css("background-color", "green");
+					if ($('#balloon').css("width") != "200px")
+					{
+						$('#balloon').css("height", "-=5");
+						$('#balloon').css("width", "-=5");
+					}
+				}
+		</script>
+	</body>
+</html>
