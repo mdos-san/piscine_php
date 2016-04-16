@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset='UTF-8'>
+	</head>
+	<body>
+		<input id="left" type="text"></input>
+		<select id="operator">
+			<option value="+">+</option>
+			<option value="-">-</option>
+			<option value="*">*</option>
+			<option value="/">/</option>
+			<option value="%">%</option>
+		</select>
+		<input id="right" type="text"></input>
+		<input type="submit" value="Try me!" onclick="calc()"></input>
+		<script>
+			function calc(){
+				var left = document.getElementById('left').value;
+				var operator = document.getElementById('operator').value;
+				var right = document.getElementById('right').value;
+				var	reg = new RegExp("^[0-9]+$");
+				if (reg.test(left) && reg.test(right))
+				{
+					if ((operator == "/" ||  operator == "%") && right == 0)	
+					{
+						console.log('It’s over 9000!');
+						alert('It’s over 9000!');
+					}
+					if (operator == "+") {
+						var result = parseInt(left) + parseInt(right);
+						console.log(result);		
+						alert(result);
+					}
+					if (operator == "-") {
+						var result = parseInt(left) - parseInt(right);
+						console.log(result);		
+						alert(result);
+					}
+					if (operator == "*") {
+						var result = parseInt(left) * parseInt(right);
+						console.log(result);		
+						alert(result);
+					}
+					if (operator == "/") {
+						var result = parseInt(left) / parseInt(right);
+						console.log(result);		
+						alert(result);
+					}
+					if (operator == "%") {
+						var result = parseInt(left) % parseInt(right);
+						console.log(result);		
+						alert(result);
+					}
+				}
+				else
+				{
+					console.log('Error :(');
+					alert('Error :(');
+				}
+			}
+			setInterval(function (){ alert('Please, use me...'); }, 30000);
+		</script>
+	</body>
+</html>
