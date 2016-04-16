@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
 	<head>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 		<meta charset='UTF-8'>
 	</head>
 	<body>
@@ -16,9 +17,9 @@
 		<input type="submit" value="Try me!" onclick="calc()"></input>
 		<script>
 			function calc(){
-				var left = document.getElementById('left').value;
-				var operator = document.getElementById('operator').value;
-				var right = document.getElementById('right').value;
+				var left = $('#left').val();
+				var operator = $('#operator').val();
+				var right = $('#right').val();
 				var	reg = new RegExp("^[0-9]+$");
 				if (reg.test(left) && reg.test(right))
 				{
