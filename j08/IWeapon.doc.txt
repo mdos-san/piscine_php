@@ -1,0 +1,6 @@
+L'interface IWeapon permet de definir une arme.
+Une arme peu tirer, la methode correspondante est:
+	function	target(array $target);
+
+$target est une array dans le cas ou une arme peu tirer sur
+plusieurs cibles.

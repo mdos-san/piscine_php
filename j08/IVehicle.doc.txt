@@ -1,0 +1,7 @@
+L'interface IVehicle permet de definir les actions specifiques a un vehicule.
+Un vehicule peu se deplacer, et prendre des degats.
+Les metodes abstraites sont donc respectivement:
+	function move($x, $y);
+	take_dmg();
+
+Pour qu'un vehicule puisse faire des degats, voir l'interface IWeapon.
